@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_490c7236ab834e7b99c769e85d56ae93 {
+                #map_93a5c7c1392848b29f2eaf0fefdd3cf7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,17 +35,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_490c7236ab834e7b99c769e85d56ae93" ></div>
+            <div class="folium-map" id="map_93a5c7c1392848b29f2eaf0fefdd3cf7" ></div>
         
 </body>
 <script>    
     
-            var map_490c7236ab834e7b99c769e85d56ae93 = L.map(
-                "map_490c7236ab834e7b99c769e85d56ae93",
+            var map_93a5c7c1392848b29f2eaf0fefdd3cf7 = L.map(
+                "map_93a5c7c1392848b29f2eaf0fefdd3cf7",
                 {
                     center: [50.4739, 4.8587],
                     crs: L.CRS.EPSG3857,
-                    zoom: 13,
+                    zoom: 15,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -55,39 +55,39 @@
 
         
     
-            var tile_layer_a7dd7602672a4c0eb54eb265b95bab96 = L.tileLayer(
+            var tile_layer_298088e8c1a64a6b923acf657f90bdf8 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_490c7236ab834e7b99c769e85d56ae93);
+            ).addTo(map_93a5c7c1392848b29f2eaf0fefdd3cf7);
         
     
-            var marker_4f1de570e8c14d40b4dcda75011ee0e0 = L.marker(
+            var marker_75fe6485a68547ebb2a6c5f2419259a8 = L.marker(
                 [50.47433, 4.86478],
                 {}
-            ).addTo(map_490c7236ab834e7b99c769e85d56ae93);
+            ).addTo(map_93a5c7c1392848b29f2eaf0fefdd3cf7);
         
     
-        var popup_80a4922880d54992a15dffdf55e442a0 = L.popup({"maxWidth": "100%"});
+        var popup_af5730c667ce42f2bc2e062733391792 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ed855c6adc9b49fd84ebea43f11d19cd = $(`<div id="html_ed855c6adc9b49fd84ebea43f11d19cd" style="width: 100.0%; height: 100.0%;">Hello World</div>`)[0];
-            popup_80a4922880d54992a15dffdf55e442a0.setContent(html_ed855c6adc9b49fd84ebea43f11d19cd);
+            var html_ecb836cd3eab49cd8b56fd056958a4e1 = $(`<div id="html_ecb836cd3eab49cd8b56fd056958a4e1" style="width: 100.0%; height: 100.0%;">Hello World</div>`)[0];
+            popup_af5730c667ce42f2bc2e062733391792.setContent(html_ecb836cd3eab49cd8b56fd056958a4e1);
         
 
-        marker_4f1de570e8c14d40b4dcda75011ee0e0.bindPopup(popup_80a4922880d54992a15dffdf55e442a0)
+        marker_75fe6485a68547ebb2a6c5f2419259a8.bindPopup(popup_af5730c667ce42f2bc2e062733391792)
         ;
 
         
     
     
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_490c7236ab834e7b99c769e85d56ae93);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_93a5c7c1392848b29f2eaf0fefdd3cf7);
                     new_mark.dragging.enable();
-                    new_mark.on('dblclick', function(e){ map_490c7236ab834e7b99c769e85d56ae93.removeLayer(e.target)})
+                    new_mark.on('dblclick', function(e){ map_93a5c7c1392848b29f2eaf0fefdd3cf7.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup("Waypoint");
                     };
-                map_490c7236ab834e7b99c769e85d56ae93.on('click', newMarker);
+                map_93a5c7c1392848b29f2eaf0fefdd3cf7.on('click', newMarker);
             
 </script>
